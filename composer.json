@@ -1,10 +1,10 @@
 {
-    "name": "rdx/laravelcollective-html",
+    "name": "rattozone/laravelcollective-html",
     "description": "HTML and Form Builders for the Laravel Framework",
     "license": "MIT",
     "support": {
-        "issues": "https://github.com/rudiedirkx/laravelcollective-html/issues",
-        "source": "https://github.com/rudiedirkx/laravelcollective-html"
+        "issues": "https://github.com/rattozone/laravelcollective-html/issues",
+        "source": "https://github.com/rattozone/laravelcollective-html"
     },
     "replace": {
         "laravelcollective/html": "self.version"
@@ -43,6 +43,6 @@
             }
         }
     },
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "prefer-stable": true
 }
