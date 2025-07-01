@@ -544,6 +544,40 @@ class FormBuilder
     }
 
     /**
+     * Create a popover button for label replacement
+     *
+     * @param string $title
+     * @param string $description
+     * @return string
+     */
+
+    public function popover($title, $description) {
+        return "<span title=\"{$title}\"
+            data-content=\"{$description}\"
+            data-placement=\"bottom\"
+            data-trigger=\"hover\"
+            class=\"btn btn-round btn-info popovers\">
+            <i class=\"fa fa-info\"></i>
+        </span>";
+    }
+
+        /**
+     * Get the ID attribute for a field name.
+     *
+     * @param  string  $name
+     * @param  array   $attributes
+     * @return string
+     */
+    public function getIdAttribute($name, $attributes)
+    {
+        if (array_key_exists('id', $attributes)) {
+            return $attributes['id'];
+        }
+
+        return $name;
+    }
+    
+    /**
      * Create a textarea input field.
      *
      * @param  string $name
