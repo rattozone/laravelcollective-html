@@ -561,22 +561,7 @@ class FormBuilder
         </span>";
     }
 
-        /**
-     * Get the ID attribute for a field name.
-     *
-     * @param  string  $name
-     * @param  array   $attributes
-     * @return string
-     */
-    public function getIdAttribute($name, $attributes)
-    {
-        if (array_key_exists('id', $attributes)) {
-            return $attributes['id'];
-        }
-
-        return $name;
-    }
-    
+   
     /**
      * Create a textarea input field.
      *
